@@ -1,0 +1,40 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    background-color: black;
+    padding: 10px;
+}
+form{
+    border: 2px solid black;
+    border-radius: 24px;
+    width: 40%;
+    margin: 20px;
+
+}
+input{
+        margin: 5px  ;
+        padding: 10px ;
+        
+    }
+
+    #Sign{
+        float: right;
+    }
+    button{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 40px;
+        box-shadow: none;
+        border: 20px solid black;
+
+    }
+
+p { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }

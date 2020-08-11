@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="img/core-img/logo2.png">
+        <div id="Sign">
+            <button><a style=" font-size: large;" href="/conn.html">Connexion</a></button>
+            <button><a style="font-size: x-small;" href="/">Inscription</a></button>
+         </div>
+    </div>
+
+    
+<center>
+    <div class="form"> <br><br><br>
+    <h3>Entrer vos Informations</h3>
+        <form id="myForm" onSubmit="Verifier(event)">
+           <div  id="erreur">
+                <!-- ici s'affiche les erreurs -->
+            </div>
+       
+            <p>
+            <label for="nom"> Nom :</label>
+             <input type="text" id="nom" name="nom"placeholder="Tapez votre nom"> <br>
+            </>
+            <p>
+             <label for="prenom"> Preom :</label>
+            <input type="text" id="pr" name="prenom"placeholder="Tapez votre prénon"><br>
+            </p>
+            <p>
+            <label for="cin"> CIN :</label>
+            <input type="text" id="cin" name="cin"placeholder="Tapez votre CIN"><br>
+            </p>
+            <p>
+            <label for="pass"> Mot De Passe :</label>
+            <input type="password" id="pass" name="pass"  placeholder="Tapez votre Mot De Passe"><br>
+            </p>
+            <p>
+            <label for="age"> age :</label>
+            <input type="text" id="age" name="age" placeholder="Tapez votre age"><br>
+            </p>
+            <input style="background-color: black; color: white; font-size: large;border-radius: 24px;" type="submit"  value="envoyer">
+        
+        </form>
+    </div>
+
+</center>
+
+<div class="footer" style="margin-left: 10px;     margin-top: -22px;">
+    <img src="/img/core-img/iconfinder_social-04_3146789.ico" width="40px"><br>
+    <img src="/img/core-img/instagram.ico" width="40px" ><bR>
+        <img src="/img/core-img/whatsapp (1).png" width="40px"><br>
+        <img src="/img/core-img/google-plus.png" width="40px"><br>
+
+</div>
+
+
+
+
+<script type = "text/javascript" src="script.js"></script>
+</body>
+</html>
