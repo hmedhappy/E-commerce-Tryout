@@ -4,21 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
 <div class="navbar">
     <ul style="margin: 0;">
-        <img src="/img/core-img/logo2.png" >   
+        <img src="img/core-img/logo2.png" >   
             <li><a href="index.html"><button>Sign-Out</button></a></li>
-            <li><a href="/acceuil.html">Acceuil</a></li>
-            <li><a href="/shop.html">Shop</a></li>
-            <li><a href="/panier.html">Panier</a></li>
+            <li><a href="acceuil.html">Acceuil</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="panier.html">Panier</a></li>
         </ul>
 </div>
+<div class="sidebar" style="float: left; ">
+    <CENTER><h2 style="    border-bottom: 5px solid #e8b912;
+        padding-bottom: 10px;
+        margin-left: 4px;
+        width: 161px;">Categories </h2></CENTER> 
+    <ul>
+        <li><a>Salon</a></li>
+        <li><a>Cuisine</a></li>
+        <li><a>Chambre</a></li>
+    </ul>
+</div>
 <center><h1>hello voici la page Shop </h1></center>
-<script src="/js/shopScript.js"></script>
 
+<div class="grid-container" id="inject">
+    <button onClick="hey()" >Show</button>
+
+   <!--  <div class="card">
+        <img src="img/product-img/product1.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>Tailored Jeans</h1>
+        <p class="price">$19.99</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button onClick="add()">Add to Cart</button></p>
+        </div>
+
+        <div class="card">
+            <img src="img/product-img/product1.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p><button onClick="add()">Add to Cart</button></p>
+            </div>
+
+        <div class="card">
+                <img src="img/product-img/product1.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Tailored Jeans</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                <p><button onClick="add()">Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="img/product-img/product1.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p><button onClick="add()">Add to Cart</button></p>
+            </div>
+
+        <div class="card">
+                <img src="img/product-img/product1.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Tailored Jeans</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                <p><button onClick="add()">Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="img/product-img/product1.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p><button onClick="add()">Add to Cart</button></p>
+            </div>
+
+        <div class="card">
+                <img src="img/product-img/product1.jpg" alt="Denim Jeans" style="width:100%">
+                <h1>Tailored Jeans</h1>
+                <p class="price">$19.99</p>
+                <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                <p><button onClick="add()">Add to Cart</button></p>
+        </div>
+ -->
+        
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var products =[
+        {
+            id ="1",
+            source="img/product-img/product1.jpg",
+            name="Tailored Jeans",
+            price="$19.99",
+            description="Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum."
+        },
+        {
+            id ="1",
+            source="img/product-img/product1.jpg",
+            name="Tailored Jeans",
+            price="$19.99",
+            description="Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum."
+        },
+        {
+            id ="1",
+            source="img/product-img/product1.jpg",
+            name="Tailored Jeans",
+            price="$19.99",
+            description="Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum."
+        }
+    ]
+   function hey(){
+       
+
+        var carddiv = document.getElementById("inject") ;
+        var t = ["",""]
+        products.forEach(element => {
+            
+            carddiv.innerHTML += `<div class="card">
+                    <img src="img/product-img/product1.jpg" alt="Denim Jeans" style="width:100%">
+                    <h1>Tailored Jeans</h1>
+                    <p class="price">$19.99</p>
+                    <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button onClick="add()">Add to Cart</button></p>
+            </div>`
+        });
+    }
+   /*  function abcd(){
+    alert("temchi") ;
+    var products =[
+        {
+            id ="1",
+            source="img/product-img/product1.jpg",
+            name="Tailored Jeans",
+            price="$19.99",
+            description="Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum."
+        },
+        {
+            id ="1",
+            source="img/product-img/product1.jpg",
+            name="Tailored Jeans",
+            price="$19.99",
+            description="Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum."
+        },
+        {
+            id ="1",
+            source="img/product-img/product1.jpg",
+            name="Tailored Jeans",
+            price="$19.99",
+            description="Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum."
+        }
+    ]
+    var carddiv = document.getElementsByClassName("grid-container").innerHTML ;
+    var newdiv = '';
+    products.forEach(element => {
+        carddiv += `
+        <div class="card">
+        <img src="${element.source}" alt="Denim Jeans" style="width:100%">
+        <h1>${element.name}</h1>
+        <p class="price">${element.price}</p>
+        <p>${element.description}</p>
+        <p><button onClick="add(${element.id})">Add to Cart</button></p>
+        </div>
+        
+        `
+        
+    });
+
+
+        
+} */
+</script>
+
+
+<!-- <script src="js/shopScript.js"></script>
+ -->
     
 </body>
 </html>
