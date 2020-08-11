@@ -6,12 +6,22 @@ body{
     margin: 0;
     padding: 0;
 }
+.background{
+    position: absolute;
+    top: 38%;
+    PADDING: 0;
+    left: 70%;
+    height: 30%;
+    margin: 0;
+    -ms-transform: rotate(180deg); /* IE 9 */
+  transform: rotate(180deg);
+}
 .logo{
     background-color: black;
     padding: 10px;
 }
 form{
-    border: 2px solid black;
+    border: 9px solid black;
     border-radius: 24px;
     width: 40%;
     margin: 20px;
